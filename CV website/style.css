@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff9f9;
+    color: #222;
+    padding: 30px 20px;
+    line-height: 1.6;
+    font-size: 16px;
+    max-width: auto;
+    margin: 0 auto;
+
+}
+
+#about {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+#about_img {
+    width: 280px;
+    height: 380px;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    margin-right: 20px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+#about h2 {
+    margin-bottom: 15px;
+    color: #7fc9a9;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.about_text p {
+    max-width: 600px;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+#cv_download {
+    background-color: #7fc9a9;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+    border-style: 2px solid;
+    border-color: #66b38c;
+    transition: background-color 0.3s ease;
+}
+
+#cv_download:hover {
+    background-color: #66b38c;
+}
+
+.container {
+    margin-bottom: 50px;
+    margin-left: 70px;
+    padding: 20px 25px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.edu_item {
+    margin-bottom: 25px;
+}
+
+.edu_year {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 6px;
+    font-style: italic;
+}
+
+.edu_place {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 6px;
+}
+
+.edu_item ul {
+    margin-left: 20px;
+    list-style-type: disc;
+    color: #555;
+    margin-top: 6px;
+    font-size: 15px;
+}
+
+#education h2,
+#experience h2,
+#skills h2,
+#languages h2,
+#links h2 {
+    color: #7fc9a9;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.exp_item {
+    margin-bottom: 30px;
+}
+
+.exp_item h3 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #222;
+}
+
+.exp_item h4 {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.exp_item ul {
+    margin-left: 20px;
+    list-style-type: disc;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+#skills ul {
+    list-style-type: none;
+    columns: 2;
+    column-gap: 40px;
+    color: #444;
+    font-size: 15px;
+}
+
+#skills li {
+    margin-bottom: 12px;
+}
+
+.links a {
+    display: inline-block;
+    margin-bottom: 12px;
+    text-decoration: none;
+    color: #7fc9a9;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #4d7d6f;
+}
+
+.links h3 {
+    margin: 30px 0 12px;
+    font-weight: 600;
+}
+
+.links button {
+    background-color: #7fc9a9;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.links button:hover {
+    background-color: #66b38c;
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    border-right: 1px solid #ccc;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar a {
+    padding: 12px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #222;
+    display: block;
+    transition: 0.3s;
+    font-weight: 500;
+    border-left: 3px solid transparent;
+}
+
+.sidebar a:hover {
+    color: #7fc9a9;
+    background-color: #f0f0f0;
+    border-left: 3px solid #7fc9a9;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 30px;
+    color: #7fc9a9;
+    cursor: pointer;
+}
+
+
+
+.openbtn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    color: #7fc9a9;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #7fc9a9;
+    color: #4f816b;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}

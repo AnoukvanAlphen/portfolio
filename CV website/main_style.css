@@ -1,0 +1,60 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff9f9;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    user-select: none;
+}
+
+#head_div {
+    max-width: 90%;
+}
+
+#header {
+    font-size: 2.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #7fc9a9;
+    width: 0;
+    animation: typing 4s steps(35, end) forwards, blink-caret 0.75s step-end infinite;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+#subtitle {
+    font-size: 1.25rem;
+    color: #666;
+    font-weight: 400;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    0%,
+    100% {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #7fc9a9
+    }
+}
