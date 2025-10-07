@@ -14,12 +14,15 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #222;
     user-select: none;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
 }
 
 #head_div {
     max-width: 90%;
 }
 
+/* ---- HEADER ANIMATION ---- */
 #header {
     font-size: 2.8rem;
     white-space: nowrap;
@@ -37,13 +40,14 @@ body {
     font-weight: 400;
 }
 
+/* ---- KEYFRAMES ---- */
 @keyframes typing {
     from {
-        width: 0
+        width: 0;
     }
 
     to {
-        width: 100%
+        width: 100%;
     }
 }
 
@@ -51,10 +55,42 @@ body {
 
     0%,
     100% {
-        border-color: transparent
+        border-color: transparent;
     }
 
     50% {
-        border-color: #7fc9a9
+        border-color: #7fc9a9;
+    }
+}
+
+/* ---- RESPONSIVE DESIGN ---- */
+@media (max-width: 768px) {
+    #header {
+        font-size: 2rem;
+        animation: typing 3s steps(25, end) forwards, blink-caret 0.75s step-end infinite;
+    }
+
+    #subtitle {
+        font-size: 1rem;
+    }
+
+    body {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #header {
+        font-size: 1.6rem;
+        border-right-width: 2px;
+        animation: typing 2.5s steps(20, end) forwards, blink-caret 0.75s step-end infinite;
+    }
+
+    #subtitle {
+        font-size: 0.9rem;
+    }
+
+    #head_div {
+        max-width: 100%;
     }
 }
