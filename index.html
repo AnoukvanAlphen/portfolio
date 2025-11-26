@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -11,12 +12,15 @@
 <body>
     <div id="mySidebar" class="sidebar">
         <a href="#about" onclick="closeNav()">About</a>
-        <a href="#education" onclick="closeNav()">Education</a>
         <a href="#experience" onclick="closeNav()">Experience</a>
-        <a href="#skills" onclick="closeNav()">Skills</a>
+        <a href="#education" onclick="closeNav()">Education</a>
+        <a href="#skills" onclick="closeNav()">Technical Skills</a>
+        <a href="#subjects" onclick="closeNav()">Subjects</a>
+        <a href="#languages" onclick="closeNav()">Languages</a>
         <a href="#links" onclick="closeNav()">Links</a>
     </div>
 
+    ```
     <div id="main">
         <button class="openbtn" onclick="toggleNav()">☰</button>
     </div>
@@ -27,28 +31,101 @@
             <div class="about_text">
                 <h2>Anouk van Alphen</h2>
                 <p>
-                    I'm a Bachelor of Computing student specializing in Software Engineering, with a growing interest in
-                    cloud computing and networking. I love digging into how systems work and how they can be optimized
-                    to solve real-world problems.
+                    I’m a Bachelor of Computing student specializing in Software Engineering, currently working as a
+                    full-stack developer with a strong focus on C# backend development.
                 </p>
                 <p>
-                    I’m always open to new learning opportunities and thrive in environments where I can adapt, grow,
-                    and take on fresh
-                    challenges. Whether it's diving into a new technology or stepping into unfamiliar territory, I enjoy
-                    the process of
-                    figuring things out and expanding my skill set.
+                    I enjoy bringing structured insight, creativity, and balance to the teams I work with. My technical
+                    interests include cloud computing, networking, AI and machine learning, database transaction
+                    management, and linear programming optimization.
                 </p>
                 <p>
-                    Alongside my technical interests, I’ve always had a creative side. I’m a trained ballerina,
-                    contemporary dancer and
-                    visual artist, and I find that my artistic background brings a fresh perspective to how I approach
-                    problem-solving and
-                    design.
-                </p> <br>
+                    With a background in classical ballet, contemporary dance, and visual arts, I approach
+                    problem-solving
+                    and design through both a technical and creative lens. I value collaboration, clear communication,
+                    and a leadership style that is hands-on, supportive, and focused on helping teams grow.
+                </p>
+                <br>
                 <a href="attachments/Anouk van Alphen CV.pdf" download="Anouk van Alphen CV" target="_blank"
                     id="cv_download">Download CV</a>
-
             </div>
+        </section>
+
+
+        <section id="experience" class="container">
+            <h2>Experience</h2>
+
+            <div class="exp_item">
+                <h3>Tutorly - Peer-Powered Learning Platform</h3>
+                <h4>Sept 2025 – Oct 2025</h4>
+                <p>
+                    Developed a full-stack peer-to-peer tutoring platform for Belgium Campus students, including
+                    AI-powered chat, collaborative discussions, and session scheduling.
+                </p>
+                <ul style="list-style-type: circle;">
+                    <li>Backend & System Architecture: APIs for authentication, tutor matching, real-time messaging
+                        using ASP.NET Core, Blazor WebAssembly, and SignalR</li>
+                    <li>Database & Storage Integration: Supabase for relational data, Azure Blob Storage for AI
+                        knowledge base</li>
+                    <li>AI Integration: RAG-powered chatbot with Python embeddings and confidence scoring</li>
+                    <li>Project Management: Led team with Agile Scrum in Jira, coordinated sprints and QA</li>
+                    <li>Delivered fully functional platform with gamification features and deployment plan</li>
+                </ul>
+                <p><strong>Tech Stack:</strong> ASP.NET Core, Blazor WebAssembly, SignalR, Supabase, Azure Blob Storage,
+                    Python, Jira, Agile Scrum</p>
+                <a href="https://github.com/AnoukvanAlphen" target="_blank" rel="noopener noreferrer">View Project on
+                    GitHub</a>
+            </div>
+
+            <div class="exp_item">
+                <h3>IoT-Based Water Quality Monitoring & Hyacinth Prediction Project</h3>
+                <h4>Feb 2025 – May 2025</h4>
+                <p>
+                    Developed a dashboard integrating IoT sensor data and machine learning models to monitor water
+                    quality
+                    and predict invasive water hyacinth growth at Hartbeespoort Dam.
+                </p>
+                <ul style="list-style-type: circle;">
+                    <li>Backend & Data Pipeline: Stored and retrieved historical water quality data in Supabase</li>
+                    <li>Machine Learning Integration: Predictive Python models for hyacinth growth and environmental
+                        trends</li>
+                    <li>Frontend Development: Vue.js dashboard with real-time visualization</li>
+                    <li>Deployment: Containerized backend/frontend with Docker</li>
+                    <li>Prototype: ESP32 microcontroller with sensors for real-time monitoring</li>
+                </ul>
+                <p><strong>Tech Stack:</strong> Python, Vue.js, Vite, Supabase, Docker, IoT Sensors, Machine Learning
+                </p>
+            </div>
+
+            <div class="exp_item">
+                <h3>Student Council President</h3>
+                <h4>Belgium Campus ITVersity, Stellenbosch — 2025</h4>
+                <p>
+                    Hands-on leadership, fostering collaboration, communication, and personal growth within my team.
+                </p>
+                <ul style="list-style-type: circle;">
+                    <li>Leading weekly student stand-ups</li>
+                    <li>Supporting team members in initiatives</li>
+                    <li>Organizing tasks and delegating responsibly</li>
+                    <li>Liaison between students and faculty</li>
+                    <li>Creating leadership opportunities</li>
+                    <li>Fostering an inclusive, engaging campus environment</li>
+                </ul>
+                <a href="https://www.linkedin.com/posts/anouk-van-alphen-337847244_jira-studentleadership-projectmanagementhashtag-activity-7347959942873513985-WnWS?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyjFRsBL_TBVuC6vbv7YZGv4AaU60SriHo"
+                    target="_blank" rel="noopener noreferrer">
+                    How I Enhanced Student Council Efficiency with Jira
+                </a>
+            </div>
+
+            <div class="exp_item">
+                <h3>Management Skills Training (Udemy – In Progress)</h3>
+                <p>
+                    Developing core management competencies including motivation, communication, delegation, and
+                    conflict
+                    resolution, actively applied in my role as Student Council President.
+                </p>
+            </div>
+
         </section>
 
         <section id="education" class="container">
@@ -67,98 +144,52 @@
 
             <div class="edu_item">
                 <h4 class="edu_year">2023-2025</h4>
-                <h3 class="edu_place">Bachelors in Computing, Belgium Campus iTversity</h3>
-                </p>
+                <h3 class="edu_place">Bachelors in Computing, Belgium Campus ITVersity</h3>
             </div>
 
+            <div class="edu_item">
+                <h4 class="edu_year">2025-2026</h4>
+                <h3 class="edu_place">Software Engineering Honours, Belgium Campus ITVersity</h3>
+            </div>
         </section>
 
-        <!-- EXPERIENCE SECTION -->
-        <section id="experience" class="container">
-            <h2>Experience</h2>
-
-            <div class="exp_item">
-                <h3>Student Council President</h3>
-                <h4>Belgium Campus iTversity, Stellenbosch Campus — 2025</h4>
-                <p>
-                    As President of the Student Council at the Belgium Campus ITVersity Stellenbosch campus, I take a
-                    hands-on and highly
-                    involved approach to leadership. I work closely with my team to ensure strong collaboration, open
-                    communication, and
-                    personal growth for each member.
-                </p> <br>
-                <h5>Some of my responsibilities include:</h5>
-                <ul style="list-style-type: circle;">
-                    <li>Leading and facilitating weekly student stand-up meetings</li>
-                    <li>Actively supporting my team in their individual responsibilities and initiatives</li>
-                    <li>Organizing and delegating tasks while remaining involved throughout execution</li>
-                    <li>Acting as a liaison between students and faculty to address concerns and ideas</li>
-                    <li>Creating opportunities for leadership development within the team</li>
-                    <li>Fostering a vibrant, inclusive, and engaging student life</li>
-                </ul>
-                <p>
-                    This role has allowed me to grow in my leadership and learn essential people skills. I pride myself
-                    on my ability to not
-                    only support and lead my team, but to help each individual experience the same personal and
-                    professional growth by
-                    acknowledging their soft skills and pushing them to take initiative.
-                </p> <br>
-                <h4>Read more about some of my student council initiatives: </h4>
-                <a href="https://www.linkedin.com/posts/anouk-van-alphen-337847244_jira-studentleadership-projectmanagementhashtag-activity-7347959942873513985-WnWS?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyjFRsBL_TBVuC6vbv7YZGv4AaU60SriHo"
-                    target="_blank" rel="noopener noreferrer">How I Enhanced Student Council Efficiency with
-                    Jira</a><br />
-            </div>
-
-            <div class="exp_item">
-                <h3>3rd year International project</h3>
-                <p>As part of an international collaborative project between Belgium campus ITVersity and PXL University
-                    in Belgium, I am
-                    working in a team of three to develop an IoT-powered system that monitors water quality and predicts
-                    the spread of
-                    invasive water hyacinth in the Hartbeespoort Dam. </p>
-                <a href="https://www.linkedin.com/posts/anouk-van-alphen-337847244_iot-environmentalinnovation-machinelearning-activity-7353128268788563968-lpzF?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyjFRsBL_TBVuC6vbv7YZGv4AaU60SriHo"
-                    target="_blank" rel="noopener noreferrer">view my
-                    project here</a><br />
-
-            </div>
-            <div class="exp_item">
-                <h3>Management Skills Training (Udemy – In Progress)</h3>
-                <p>As part of my ongoing effort to grow as an effective leader, I am currently enrolled in the
-                    "Management Skills Training
-                    for New and Experienced Managers" course on Udemy. This course is helping me develop core management
-                    competencies,
-                    including team motivation, communication, delegation, and conflict resolution. I'm actively applying
-                    these skills in my
-                    role as Student Council President, where I lead a diverse team to plan and execute campus
-                    initiatives.</p>
-
-            </div>
-
-            <div class="exp_item">
-                <h3>Certifications</h3>
-                <ul style="list-style-type: circle;">
-                    <li>Python International Certificate (2022)</li>
-                    <li>Security Fundamentals SC-900 Certificate (2022)</li>
-                </ul>
-            </div>
-
-        </section>
-
-        <!-- SKILLS SECTION -->
         <section id="skills" class="container">
-            <h2>Skills</h2>
+            <h2>Technical Skills & Tools</h2>
             <ul style="list-style-type: circle;">
-                <li>Creative and logical problem-solving</li>
-                <li>Strong conceptual and systems thinking</li>
-                <li>Pattern recognition and process improvement</li>
-                <li>Ethical decision-making and accountability</li>
-                <li>Effective communication and active listening</li>
-                <li>Adaptability to new technologies and challenges</li>
-                <li>Programming Languages & Frameworks: Python, Java, C#, HTML, CSS, JavaScript, SQL</li>
-                <li>Version Control: Git</li>
-                <li>Project Management: Jira, Agile teamwork exposure</li>
-                <li>Foundational knowledge in cloud and network security (Microsoft SC-900)</li>
-                <li>Building full-stack projects integrating frontend and backend technologies</li>
+                <li>Programming & Development: C#, .NET, Java, JavaScript, HTML & CSS, SQL</li>
+                <li>Full-Stack & Cloud: Integrating frontend and backend technologies</li>
+                <li>Frameworks: Vue.js, Node.js, Express.js, Blazor WebAssembly, Tailwind CSS</li>
+                <li>Databases & Cloud Storage: MongoDB, Supabase, Azure Blob Storage</li>
+                <li>Tools: Git, Postman, Docker, Jira (Agile Scrum)</li>
+                <li>Optimization: Linear and non-linear programming</li>
+                <li>Hardware & IoT: Arduino, ESP32, Tinkercad</li>
+                <li>Interpersonal & Leadership: Problem-solving, conceptual thinking, ethical decision-making, team
+                    leadership</li>
+            </ul>
+        </section>
+
+        <section id="subjects" class="container">
+            <h2>Subjects Completed</h2>
+            <ul style="list-style-type: circle;">
+                <li>Linear Programming (181, 281, 381)</li>
+                <li>Software Engineering & SEN381</li>
+                <li>Machine Learning</li>
+                <li>Programming in C# (181, 182, 281, 282)</li>
+                <li>Programming in Java (381)</li>
+                <li>Web Programming (181, 281, 381)</li>
+                <li>Mathematics (181, 281)</li>
+                <li>Network Development</li>
+                <li>Project Management (281, 381)</li>
+                <li>Research Methods (including proposal on Dynamic resource allocation in multi-cloud)</li>
+                <li>Computer Architecture and Design</li>
+                <li>Information Systems (181, 281)</li>
+                <li>User Experience Design</li>
+                <li>Database Development (181, 281, 381)</li>
+                <li>Entrepreneurship & Innovation and Leadership (INL101-202)</li>
+                <li>Internet of Things</li>
+                <li>Software Analysis & Design</li>
+                <li>Statistics (181, 281)</li>
+                <li>Academic Writing</li>
             </ul>
         </section>
 
@@ -167,24 +198,19 @@
             <ul style="list-style-type: circle;">
                 <li>Afrikaans: Native or bilingual proficiency</li>
                 <li>English: Native or bilingual proficiency</li>
-                <li>Korean: Limited working proficiency</li>
-                <p>(in progress)</p>
+                <li>Korean: Limited working proficiency (in progress)</li>
             </ul>
         </section>
 
-        <!-- LINKS SECTION -->
         <section id="links" class="container">
             <h2>Links</h2>
             <a href="https://www.linkedin.com/in/anouk-van-alphen-337847244/" target="_blank"
                 rel="noopener noreferrer">LinkedIn</a><br />
             <a href="https://github.com/AnoukvanAlphen" target="_blank" rel="noopener noreferrer">GitHub</a><br />
-            <h4>Download my standout personality report here:</h4>
-            <a href="attachments/StandoutReport.pdf" download="Anouk van Alphen Standout Report"
-                target="_blank">Download
-                Standout Report</a>
         </section>
 
     </main>
+    ```
 
 </body>
 <script src="home.js"></script>
