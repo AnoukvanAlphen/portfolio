@@ -14,13 +14,12 @@
         <a href="#about" onclick="closeNav()">About</a>
         <a href="#experience" onclick="closeNav()">Experience</a>
         <a href="#education" onclick="closeNav()">Education</a>
-        <a href="#skills" onclick="closeNav()">Technical Skills</a>
-        <a href="#subjects" onclick="closeNav()">Subjects</a>
+        <a href="#skills" onclick="closeNav()">Skills</a>
+        <a href="#interpersonal" onclick="closeNav()">Interpersonal</a>
         <a href="#languages" onclick="closeNav()">Languages</a>
         <a href="#links" onclick="closeNav()">Links</a>
     </div>
 
-    ```
     <div id="main">
         <button class="openbtn" onclick="toggleNav()">☰</button>
     </div>
@@ -31,19 +30,9 @@
             <div class="about_text">
                 <h2>Anouk van Alphen</h2>
                 <p>
-                    I’m a Bachelor of Computing student specializing in Software Engineering, currently working as a
-                    full-stack developer with a strong focus on C# backend development.
-                </p>
-                <p>
-                    I enjoy bringing structured insight, creativity, and balance to the teams I work with. My technical
-                    interests include cloud computing, networking, AI and machine learning, database transaction
-                    management, and linear programming optimization.
-                </p>
-                <p>
-                    With a background in classical ballet, contemporary dance, and visual arts, I approach
-                    problem-solving
-                    and design through both a technical and creative lens. I value collaboration, clear communication,
-                    and a leadership style that is hands-on, supportive, and focused on helping teams grow.
+                    Software Engineering student and full-stack developer with a C# / .NET focus, currently gaining
+                    professional QA and test-automation experience within a financial services environment. Core
+                    technical interests: cloud computing, AI/ML, database systems, and optimization.
                 </p>
                 <br>
                 <a href="attachments/Anouk van Alphen CV.pdf" download="Anouk van Alphen CV" target="_blank"
@@ -54,6 +43,42 @@
 
         <section id="experience" class="container">
             <h2>Experience</h2>
+
+            <div class="exp_item">
+                <h3>Sanlam Private Wealth (contracted via iOCO) – Quality Assurance / Test Analyst</h3>
+                <h4>January 2026 – Present (Applied Industry Training placement)</h4>
+                <p>
+                    Completing a year-long Applied Industry Training placement as a Test Analyst on Papertrail,
+                    Sanlam Private Wealth's anti-money laundering (AML) compliance system, which governs Customer Due
+                    Diligence (CDD) and Ongoing Due Diligence (ODD) workflows for investment client onboarding and
+                    ongoing risk monitoring. Gained hands-on exposure to investment industry compliance processes,
+                    working within Sanlam's investment services environment on both manual QA and, more recently, test
+                    automation.
+                </p>
+                <ul style="list-style-type: circle;">
+                    <li>AML & Investment Domain Testing: Executed functional and regression testing across CDD and
+                        ODD workflows supporting investment client onboarding, risk classification, and ongoing
+                        compliance monitoring; retested defects and compiled test evidence to support audit and
+                        regulatory compliance requirements</li>
+                    <li>User Acceptance Testing & Stakeholder Engagement: Coordinated and supported UAT with branch
+                        users and business analysts, including a CDD case-reassignment feature that was demoed to
+                        branch staff and deployed to production</li>
+                    <li>Process & Data Reconciliation: Performed document and data reconciliation across production
+                        and non-production environments (case headers, dashboards, exported reports) to ensure data
+                        integrity and bi-directional traceability within the investment case-management system</li>
+                    <li>Test Management & Tooling: Migrated testing administration from SharePoint to Azure DevOps,
+                        logging user stories, defects, and test evidence; participated in weekly defect-prioritization
+                        sessions with product owners and the external development vendor</li>
+                    <li>Test Automation: Joined Sanlam's automation initiative for the Sanlam Group's digital portals
+                        (client, intermediary, and portfolio manager portals) – configured source-control standards
+                        (.gitignore, coding conventions), authored an automation onboarding guide, and built SOAP API
+                        sanity tests and UI regression tests using Playwright</li>
+                    <li>Certification: Completed ISTQB Foundation Level certification; currently developing skills in
+                        AI-augmented testing</li>
+                </ul>
+                <p><strong>Tech Stack:</strong> Azure DevOps, Playwright, SOAP APIs, SharePoint, Git, ISTQB testing
+                    methodology, Agile/Scrum</p>
+            </div>
 
             <div class="exp_item">
                 <h3>Tutorly - Peer-Powered Learning Platform</h3>
@@ -101,29 +126,18 @@
                 <h3>Student Council President</h3>
                 <h4>Belgium Campus ITVersity, Stellenbosch — 2025</h4>
                 <p>
-                    Hands-on leadership, fostering collaboration, communication, and personal growth within my team.
+                    President of the Student Council, Belgium Campus ITVersity Stellenbosch campus.
                 </p>
                 <ul style="list-style-type: circle;">
-                    <li>Leading weekly student stand-ups</li>
-                    <li>Supporting team members in initiatives</li>
-                    <li>Organizing tasks and delegating responsibly</li>
-                    <li>Liaison between students and faculty</li>
-                    <li>Creating leadership opportunities</li>
-                    <li>Fostering an inclusive, engaging campus environment</li>
+                    <li>Facilitated weekly student stand-up meetings and tracked initiatives via Jira</li>
+                    <li>Liaised between students and faculty to resolve concerns and drive new initiatives</li>
+                    <li>Delegated and mentored council members, creating leadership-development opportunities within
+                        the team</li>
                 </ul>
                 <a href="https://www.linkedin.com/posts/anouk-van-alphen-337847244_jira-studentleadership-projectmanagementhashtag-activity-7347959942873513985-WnWS?utm_source=share&utm_medium=member_desktop&rcm=ACoAADyjFRsBL_TBVuC6vbv7YZGv4AaU60SriHo"
                     target="_blank" rel="noopener noreferrer">
                     How I Enhanced Student Council Efficiency with Jira
                 </a>
-            </div>
-
-            <div class="exp_item">
-                <h3>Management Skills Training (Udemy – In Progress)</h3>
-                <p>
-                    Developing core management competencies including motivation, communication, delegation, and
-                    conflict
-                    resolution, actively applied in my role as Student Council President.
-                </p>
             </div>
 
         </section>
@@ -154,42 +168,38 @@
         </section>
 
         <section id="skills" class="container">
-            <h2>Technical Skills & Tools</h2>
+            <h2>Technical Skills</h2>
             <ul style="list-style-type: circle;">
                 <li>Programming & Development: C#, .NET, Java, JavaScript, HTML & CSS, SQL</li>
-                <li>Full-Stack & Cloud: Integrating frontend and backend technologies</li>
-                <li>Frameworks: Vue.js, Node.js, Express.js, Blazor WebAssembly, Tailwind CSS</li>
-                <li>Databases & Cloud Storage: MongoDB, Supabase, Azure Blob Storage</li>
-                <li>Tools: Git, Postman, Docker, Jira (Agile Scrum)</li>
+                <li>Full-Stack & Cloud: Building projects that integrate frontend and backend technologies</li>
+                <li>Tools & Methodologies: Version control (Git), Jira project management, Agile teamwork exposure
+                </li>
                 <li>Optimization: Linear and non-linear programming</li>
+                <li>Software Testing & QA: ISTQB Foundation Level certified; manual functional, regression, and UAT
+                    testing; test automation with Playwright; SOAP API testing; defect management and test-evidence
+                    documentation in Azure DevOps</li>
+                <li>Investment & Financial Compliance Domain Knowledge: Practical exposure to investment client
+                    onboarding and anti-money laundering (AML) compliance processes, including Customer Due Diligence
+                    (CDD) and Ongoing Due Diligence (ODD) workflows, gained through an Applied Industry Training
+                    placement at Sanlam Private Wealth</li>
+            </ul>
+
+            <h3>Frameworks, Tools & API's</h3>
+            <ul style="list-style-type: circle;">
+                <li>Frontend & Backend: Vue.js, Node.js, Express.js, Tailwind CSS, Blazor WebAssembly</li>
+                <li>Databases & Cloud: MongoDB, Supabase, Azure Blob Storage</li>
+                <li>Development & Testing: Postman, Docker, Playwright</li>
                 <li>Hardware & IoT: Arduino, ESP32, Tinkercad</li>
-                <li>Interpersonal & Leadership: Problem-solving, conceptual thinking, ethical decision-making, team
-                    leadership</li>
             </ul>
         </section>
 
-        <section id="subjects" class="container">
-            <h2>Subjects Completed</h2>
+        <section id="interpersonal" class="container">
+            <h2>Interpersonal & Leadership Skills</h2>
             <ul style="list-style-type: circle;">
-                <li>Linear Programming (181, 281, 381)</li>
-                <li>Software Engineering & SEN381</li>
-                <li>Machine Learning</li>
-                <li>Programming in C# (181, 182, 281, 282)</li>
-                <li>Programming in Java (381)</li>
-                <li>Web Programming (181, 281, 381)</li>
-                <li>Mathematics (181, 281)</li>
-                <li>Network Development</li>
-                <li>Project Management (281, 381)</li>
-                <li>Research Methods (including proposal on Dynamic resource allocation in multi-cloud)</li>
-                <li>Computer Architecture and Design</li>
-                <li>Information Systems (181, 281)</li>
-                <li>User Experience Design</li>
-                <li>Database Development (181, 281, 381)</li>
-                <li>Entrepreneurship & Innovation and Leadership (INL101-202)</li>
-                <li>Internet of Things</li>
-                <li>Software Analysis & Design</li>
-                <li>Statistics (181, 281)</li>
-                <li>Academic Writing</li>
+                <li>Analytical problem-solving with strong systems thinking</li>
+                <li>Organized and dependable, comfortable navigating complexity and ambiguity</li>
+                <li>Clear communicator, effective in both independent and team settings</li>
+                <li>Adaptable, with a growing leadership mindset</li>
             </ul>
         </section>
 
@@ -198,7 +208,7 @@
             <ul style="list-style-type: circle;">
                 <li>Afrikaans: Native or bilingual proficiency</li>
                 <li>English: Native or bilingual proficiency</li>
-                <li>Korean: Limited working proficiency (in progress)</li>
+                <li>Korean: Intermediate proficiency</li>
             </ul>
         </section>
 
@@ -210,7 +220,6 @@
         </section>
 
     </main>
-    ```
 
 </body>
 <script src="home.js"></script>
